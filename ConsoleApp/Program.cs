@@ -4,7 +4,7 @@
     {
         private static void Main(string[] args)
         {
-            var i = 10;
+            var i = 19;
             //i = "string";
             Console.WriteLine("Hello, World!");
             Console.ReadKey();
