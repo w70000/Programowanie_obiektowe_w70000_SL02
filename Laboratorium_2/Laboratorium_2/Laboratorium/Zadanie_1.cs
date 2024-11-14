@@ -8,21 +8,20 @@ namespace Laboratorium_2.Laboratorium
 {
     public class Person
     {
-
         private string name;
         private string surname;
         private int age;
         private string pesel;
 
+        public string Name { get { return name; } set { name = value; } }
+        public string Surname { get { return surname; } set { name = value; } }
+        public int Age { get { return age; }  
+            set {
+                if (value > 0) age = value;
+                else age = 0;
+            }  }
+        public string Pesel => pesel; 
 
-        public string Name { get { return name; } set { name = value + "TEST"; } }
-        public string Surname { get { return name; } set { name = value; } }
-
-        public int Age { get { return age; } 
-            set{
-               if (value > 0) age = value;
-               else age = 0;
-         }  }
 
         public Person()
         {
@@ -44,5 +43,9 @@ namespace Laboratorium_2.Laboratorium
             Console.WriteLine($"Witaj {otherName} Jestem {Name}");
         }
 
+        //public static Person MapUser(User n)
+        //{
+        //    return new Person(n.UserName);
+        //}
     }
 }

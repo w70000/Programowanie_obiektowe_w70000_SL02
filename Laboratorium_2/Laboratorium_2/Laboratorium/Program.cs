@@ -1,19 +1,17 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Laboratorium_2.Laboratorium;
+using System.Globalization;
 
 Console.WriteLine("Hello, World!");
 
 
-Person os = new Person();
+Person osoba1 = new Person();
 
-os.Welcome("DD");
-os.Welcome("DD");
+osoba1.Welcome("DGFD");
+osoba1.Welcome("DD");
+osoba1.
 
-
-
-
-
-
+//public 
 
 
 
